@@ -3,12 +3,12 @@
 Game game;
 
 void setup() {
-  game.beginScreen();
+  game.beginScreen(); // See game.h
   pinMode(enablePin, OUTPUT);
   pinMode(buttonPin, INPUT_PULLUP);
   randomSeed(analogRead(A3)); // Open input pin A3, generates random noise for seed. 
 }
 
 void loop() {
-  game.run(); // Main loop. Handles input and updates screen.
+  game.run(); // See game.h
 }
