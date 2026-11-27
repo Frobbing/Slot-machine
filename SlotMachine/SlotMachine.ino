@@ -6,9 +6,9 @@ void setup() {
   game.beginScreen();
   pinMode(enablePin, OUTPUT);
   pinMode(buttonPin, INPUT_PULLUP);
-  randomSeed(analogRead(A3));
+  randomSeed(analogRead(A3)); // Open input pin A3, generates random noise for seed. 
 }
 
 void loop() {
-  game.run();
+  game.run(); // Main loop. Handles input and updates screen.
 }
